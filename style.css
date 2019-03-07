@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Pacifico|Roboto|Roboto+Condensed');
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lato';
+}
+
+.navbar-brand {
+    font-family: 'Pacifico';
+    font-size: 35px;
+    color: #f7b731 !important;
+}
+
+.nav-link {
+    font-size: 16px;
+    margin: 15px;
+    color: black !important;
+    font-family: 'Roboto Condensed';
+    transition: all 200ms ease-in;
+}
+
+.nav-link:hover {
+    color: #45aaf2 !important;
+}
+
+.active .nav-link {
+    color: #45aaf2 !important;
+}
+
+.menu-right-btn {
+    padding: 3px 40px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+}
+
+.menu-right-btn:hover {
+    color: #d1d8e0;
+    background-color: #45aaf2;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.section-1 .heading-1 {
+    margin-top: 8%;
+}
+
+.section-1 .heading-2 {
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+
+.section-1 .para-1 {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.section-1 .card-text,
+.para-1 {
+    color: rgba(0, 0, 0, 0.59);
+}
+
+.section-1 {
+    margin-bottom: 8%;
+}
+
+.section-1 img {
+    height: 13rem;
+}
+
+.section-1 .inner {
+    overflow: hidden;
+}
+
+.section-1 .inner img {
+    transition: all 1.5s ease;
+}
+
+.section-1 .inner:hover img {
+    transform: scale(1.5);
+}
+
+
+
+.section-2 .container-fluid {
+    background-image: url(nn.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-2 .heading-1 {
+    margin-top: 24%;
+    margin-bottom: 7%;
+    font-family: 'Roboto';
+    width: 80%;
+    color: #4b6584;
+    margin-left: 10%;
+}
+
+.section-2 .para {
+    width: 80%;
+    font-family: 'Montserrat';
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+
+.section-2 button {
+    background: none;
+    font-family: 'Roboto';
+    color: black;
+    width: 240px;
+    height: 50px;
+    border: 1px solid #338033;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin-bottom: 7%;
+    margin-left: 10%;
+    transform: translate(-1%, -50%);
+}
+
+.section-2 button:focus {
+    outline: none;
+}
+
+.section-2 button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.section-2 button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) scaleX(-15deg);
+}
+
+.section-2 button:hover {
+    background: #20bf6b;
+    cursor: pointer;
+}
+
+.section-2 button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.section-2 button:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+.section-3 {
+    margin-top: 6%;
+}
+
+.section-3 i {
+    color: #45aaf2;
+}
+
+.section-3 p {
+    color: rgba(0, 0, 0, 0.59);
+    text-align: justify;
+
+}
+
+.section-4 {
+    margin-top: 8%;
+}
+
+.section-4 .row .col-md-7,
+.col-md-5 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.section-4 a {
+    color: #4b7bec;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.section-4 .para-1 {
+    color: white;
+    font-family: 'Roboto Condensed';
+    margin-top: 7%;
+    font-size: 25px;
+}
+
+.section-5 {
+
+    background-color: #778ca3;
+    
+    
+}
+
+.section-5 input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    margin-bottom: 9%;
+}
+
+.section-5 input[type="text"] {
+    background: #d1d8e0;
+    width: 340px;
+    height: 50px;
+    border: #778ca3;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.section-5 input[type="submit"] {
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #f7b731;
+    color: #fff;
+}
+
+.section-5 input[type="submit"]:hover {
+    background: #eb3b5a;
+}
+
+
+
+.section-5 .share{
+    position: absolute;
+    top: 540%;
+    left: 51%;
+    transform: translate(-50% , -50%) rotate(45deg);
+    width: 40px;
+    height: 40px;    
+}
+
+.section-5 .share ul{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.section-5 .share ul li{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+    background: #ffffff;
+    transition: 0.5s;
+    overflow: hidden;
+    
+}
+
+.section-5 .share ul.active li{
+transform: scale(0.95);
+}
+
+.section-5 .share ul li a{
+    position: absolute;
+    top: -65%;
+    left: 1%;
+    width: 100%;
+    height: 190%;
+    line-height: 90px;
+    text-align: center;
+    font-size: 30px;
+    color: #2d98da;
+    transition: .5s;
+}
+
+.section-5 .share ul li a .fab{
+    transform: rotate(-45deg);
+}
+
+.section-5 .share ul li a:hover{
+    
+    color: #fff;
+    background: #3867d6;    
+}
+
+.section-5 .toggle{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #fc5c65;
+    transform: scale(0.95);
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.section-5 .fa-share-alt{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    line-height: 30px;
+    top: 39%;
+    left: 9%;
+    color: #fff;
+    font-size: 10px;
+    
+    text-align: center;
+    font-size: 30px;
+    transform: rotate(-45deg);
+}
+
+.section-5 .fa-share-alt.active::before{
+    content:'\f00d';
+}
+
+.section-5 .share ul li a .fab{
+    transform: rotate(-45deg);
+}
+
+.section-5 .share ul.active li:nth-child(1){
+    top: 100%;
+    left: -100%;
+    transition-delay: 0.4s;
+}
+
+.section-5 .share ul.active li:nth-child(2){
+    top: 200%;                                                                                                       
+    left: -200%;
+    transition-delay: 0.2s;
+}
+
+.section-5 .share ul.active li:nth-child(3){
+    top: -100%;                                                                                                       
+    left: 100%;
+    transition-delay: 0.4s;
+}
+
+.section-5 .share ul.active li:nth-child(4){
+    top: -200%;                                                                                                       
+    left: 200%;
+    transition-delay: 0.2s;
+}
+
+
+
